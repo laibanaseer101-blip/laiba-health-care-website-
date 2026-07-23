@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare Plus — Your Health, Our Priority</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">🩺 Medi<span>Care+</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="firstaid.html">First Aid</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="donate.html" class="btn-nav">Support Us</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Your Health, <span>Our Priority</span></h1>
+      <p>Providing compassionate, world-class healthcare services and life-saving first-aid knowledge — anytime, anywhere.</p>
+      <div class="hero-buttons">
+        <a href="firstaid.html" class="btn btn-primary">Learn First Aid</a>
+        <a href="donate.html" class="btn btn-outline">Donate Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Comprehensive care designed around you.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🏥</div>
+          <h3>24/7 Emergency Care</h3>
+          <p>Round-the-clock emergency services with highly trained medical professionals.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👨‍⚕️</div>
+          <h3>Expert Doctors</h3>
+          <p>Board-certified specialists across every major medical discipline.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💊</div>
+          <h3>Pharmacy & Lab</h3>
+          <p>In-house pharmacy and advanced diagnostic labs for fast, accurate results.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚑</div>
+          <h3>Ambulance Service</h3>
+          <p>Rapid-response ambulances equipped with state-of-the-art life support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta-content">
+      <h2>Every Second Counts in an Emergency</h2>
+      <p>Learn life-saving first aid skills today — be the hero someone needs tomorrow.</p>
+      <a href="firstaid.html" class="btn btn-primary">Explore First Aid Guide</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🩺 MediCare+</h3>
+        <p>Delivering trusted healthcare and emergency education since 2010.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="firstaid.html">First Aid</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 +1 (800) 123-4567</p>
+        <p>✉️ care@medicareplus.org</p>
+        <p>📍 123 Health Ave, NY</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 MediCare Plus. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
