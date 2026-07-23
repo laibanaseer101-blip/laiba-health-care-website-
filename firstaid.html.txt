@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Aid Guide — MediCare Plus</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">🩺 Medi<span>Care+</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="firstaid.html" class="active">First Aid</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="donate.html" class="btn-nav">Support Us</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <section class="page-header emergency">
+    <div class="container">
+      <h1>🚨 First Aid Essentials</h1>
+      <p>Know what to do before help arrives — every second matters.</p>
+    </div>
+  </section>
+
+  <section class="emergency-banner">
+    <div class="container">
+      <p><strong>Emergency?</strong> Call <a href="tel:911">911</a> or your local emergency number immediately.</p>
+    </div>
+  </section>
+
+  <section class="firstaid-section">
+    <div class="container">
+      <h2 class="section-title">Life-Saving Techniques</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">❤️ CPR (Cardiopulmonary Resuscitation)</button>
+          <div class="accordion-body">
+            <ol>
+              <li>Check responsiveness — tap the person and shout.</li>
+              <li>Call emergency services immediately.</li>
+              <li>Place the person on their back on a firm surface.</li>
+              <li>Push hard and fast in the center of the chest — 100–120 compressions per minute.</li>
+              <li>If trained, give 2 rescue breaths after every 30 compressions.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">🩸 Treating Severe Bleeding</button>
+          <div class="accordion-body">
+            <ol>
+              <li>Apply firm, direct pressure with a clean cloth.</li>
+              <li>Elevate the injured area above heart level if possible.</li>
+              <li>Do NOT remove the cloth — add more layers if needed.</li>
+              <li>Seek emergency medical help immediately.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">🔥 Burns Treatment</button>
+          <div class="accordion-body">
+            <ol>
+              <li>Cool the burn under cool running water for 10–20 minutes.</li>
+              <li>Remove jewelry or tight items near the burn.</li>
+              <li>Cover loosely with a sterile, non-fluffy dressing.</li>
+              <li>Do NOT apply ice, butter, or toothpaste.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">🤧 Choking (Heimlich Maneuver)</button>
+          <div class="accordion-body">
+            <ol>
+              <li>Stand behind the person and wrap your arms around their waist.</li>
+              <li>Make a fist with one hand, place it above the navel.</li>
+              <li>Grasp your fist with the other hand and thrust inward and upward.</li>
+              <li>Repeat until the object is expelled or help arrives.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">🦴 Fractures & Sprains</button>
+          <div class="accordion-body">
+            <ol>
+              <li>Do NOT move the injured limb.</li>
+              <li>Immobilize it with a splint or sling if available.</li>
+              <li>Apply ice wrapped in cloth to reduce swelling.</li>
+              <li>Seek professional medical attention.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>🩺 MediCare+</h3><p>Delivering trusted healthcare since 2010.</p></div>
+      <div><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="firstaid.html">First Aid</a></li><li><a href="donate.html">Donate</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><p>📞 +1 (800) 123-4567</p><p>✉️ care@medicareplus.org</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 MediCare Plus.</p></div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
