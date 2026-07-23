@@ -1,0 +1,100 @@
+/* ============ MOBILE MENU ============ */
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+}
+
+// Close menu when a link is clicked (mobile)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('show'));
+});
+
+/* ============ ACCORDION (First Aid Page) ============ */
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const body = header.nextElementSibling;
+    const isOpen = body.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+    document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('active'));
+
+    // Open clicked one (if it was closed)
+    if (!isOpen) {
+      body.classList.add('open');
+      header.classList.add('active');
+    }
+  });
+});
+
+/* ============ DONATION FORM ============ */
+const amountButtons = document.querySelectorAll('.amount-btn');
+const customAmount = document.getElementById('customAmount');
+const donationForm = document.getElementById('donationForm');
+const formMessage = document.getElementById('formMessage');
+
+let selectedAmount = 0;
+
+amountButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    amountButtons.forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    selectedAmount = parseInt(btn.dataset.amount);
+    if (customAmount) customAmount.value = '';
+  });
+});
+
+if (customAmount) {
+  customAmount.addEventListener('input', () => {
+    amountButtons.forEach(b => b.classList.remove('selected'));
+    selectedAmount = parseInt(customAmount.value) || 0;
+  });
+}
+
+if (donationForm) {
+  donationForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('donorName').value.trim();
+    const email = document.getElementById('donorEmail').value.trim();
+    const finalAmount = customAmount.value ? parseInt(customAmount.value) : selectedAmount;
+
+    if (!name || !email) {
+      formMessage.textContent = '❌ Please fill in all required fields.';
+      formMessage.style.color = 'var(--accent)';
+      return;
+    }
+    if (!finalAmount || finalAmount <= 0) {
+      formMessage.textContent = '❌ Please select or enter a donation amount.';
+      formMessage.style.color = 'var(--accent)';
+      return;
+    }
+
+    formMessage.style.color = 'var(--primary)';
+    formMessage.textContent = `✅ Thank you, ${name}! Your $${finalAmount} donation means the world to us.`;
+    donationForm.reset();
+    amountButtons.forEach(b => b.classList.remove('selected'));
+    selectedAmount = 0;
+  });
+}
+
+/* ============ SMOOTH SCROLL REVEAL ============ */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.card, .stat, .accordion-item').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  observer.observe(el);
+});
