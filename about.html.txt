@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — MediCare Plus</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">🩺 Medi<span>Care+</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="firstaid.html">First Aid</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="donate.html" class="btn-nav">Support Us</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>About MediCare Plus</h1>
+      <p>Healing hearts, saving lives, building trust.</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container about-grid">
+      <div>
+        <h2>Our Mission</h2>
+        <p>At MediCare Plus, we believe quality healthcare is a fundamental human right. Our mission is to deliver compassionate, accessible, and innovative medical care to every individual — regardless of background or circumstance.</p>
+        <h2>Our Vision</h2>
+        <p>To be the most trusted healthcare provider in the region, known for excellence in treatment, education, and community service.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><h3>15+</h3><p>Years of Service</p></div>
+        <div class="stat"><h3>200+</h3><p>Expert Doctors</p></div>
+        <div class="stat"><h3>50K+</h3><p>Lives Touched</p></div>
+        <div class="stat"><h3>24/7</h3><p>Emergency Care</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="container">
+      <h2 class="section-title">Meet Our Doctors</h2>
+      <div class="cards">
+        <div class="card team-card">
+          <div class="card-icon">👩‍⚕️</div>
+          <h3>Dr. Sarah Johnson</h3>
+          <p>Chief Cardiologist — 18 years of experience</p>
+        </div>
+        <div class="card team-card">
+          <div class="card-icon">👨‍⚕️</div>
+          <h3>Dr. Michael Chen</h3>
+          <p>Head of Emergency Medicine</p>
+        </div>
+        <div class="card team-card">
+          <div class="card-icon">👩‍⚕️</div>
+          <h3>Dr. Priya Sharma</h3>
+          <p>Pediatric Specialist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>🩺 MediCare+</h3><p>Delivering trusted healthcare since 2010.</p></div>
+      <div><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="firstaid.html">First Aid</a></li><li><a href="donate.html">Donate</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><p>📞 +1 (800) 123-4567</p><p>✉️ care@medicareplus.org</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 MediCare Plus.</p></div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
